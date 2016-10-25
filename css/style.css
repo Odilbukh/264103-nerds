@@ -1,8 +1,6 @@
 @charset "utf-8";
 @font-face {
-    font-family: symbols-nerds;
-    src: url("../font/symbols-nerds.eot?27841936");
-    src: url("../font/symbols-nerds.eot?27841936#iefix") format("embedded-opentype"), url("../font/symbols-nerds.woff?27841936") format("woff"), url("../font/symbols-nerds.ttf?27841936") format("truetype"), url("../font/symbols-nerds.svg?27841936#symbols-nerds") format("svg");
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
