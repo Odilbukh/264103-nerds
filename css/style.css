@@ -85,7 +85,7 @@ body {
 
 .main-navigation ul {
   margin-top: 32px;
-  padding-left: 60px;
+  padding-left: 140px;
   font-size: 0;
   text-align: center;
 }
@@ -100,14 +100,14 @@ body {
 
 .main-navigation a {
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 800px;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
 
 .main-navigation .cart {
-  padding-left: 200px;
+  padding-left: 230px;
   padding-right: 0px;
 }
 
@@ -357,6 +357,7 @@ body {
 .about-right ul { padding: 0; }
 
 .about-left li  {
+  display: inline-block;
   padding-top: 10px;
   padding-bottom: 15px;
   padding-left: 35px;
@@ -366,19 +367,14 @@ body {
   list-style: none;
 }
 
-.about-right li {
+.numbers li {
   padding-top: 10px;
   padding-bottom: 15px;
   padding-left: 35px;
   font-size: 16px;
   font-weight: 500;
   list-style: none;
-  float: left;
-}
-
-.about-right .numbers {
-  float: left;
-  font-weight: 600;
+  display: inline-block;
 }
 
 .about-right { width: 400px; }
@@ -412,7 +408,7 @@ body {
 
 .map { position: relative; }
 
-.map-block {
+.map-content {
   position: absolute;
   left: 50%;
   top: 87px;
@@ -423,49 +419,56 @@ body {
   background-color: #fff;
 }
 
-.map-block-title {
+.map-content-title {
   margin: 0;
   padding: 11px 0 18px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
-.map-block-address {
+.map-content-address {
   width: 210px;
   margin: 0;
   padding-bottom: 22px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #acacac;
 }
 
-.map-block-telephone {
+.contacts-telephone {
   margin: 0;
   padding-bottom: 30px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #acacac;
 }
 
-.map-block .btn-red {
+.map-content .btn-red {
   display: inline-block;
   padding: 12px 54px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 12px;
   font-weight: 500;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   color: white;
   background-color: #fb565a;
   border-radius: 3px;
 }
 
-.map-block .btn-red:hover { background-color:#d6494d; }
+.map-content .btn-red:hover { background-color:#d6494d; }
 
-.map-block  .btn-red:active {
+.map-content  .btn-red:active {
   background-color: #b63538;
   box-shadow: inset 0px 3px 0px #9b2d30;
 }
 
-.map-container {
+.map-canvas {
   width: 100%;
   min-height: 415px;
 }
@@ -532,6 +535,7 @@ body {
   padding-bottom: 17px;
   font-size: 18px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .range-control {
@@ -570,7 +574,10 @@ body {
   background-color: #00ca74;
 }
 
-.range-price { font-size: 0px;}
+.range-price {
+  font-size: 0px;
+  text-transform: uppercase;
+}
 
 .range-price label {
   display: inline-block;
@@ -673,13 +680,15 @@ body {
 
 .catalog-filter .btn {
   display: inline-block;
-  padding: 11px 45px;
+  padding: 15px 90px;
   margin-top: 46px;
   font-size: 12px;
   font-weight: 500;
   background-color: #f1f1f1;
   border: none;
   border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .catalog-filter .btn:hover { background-color: #e5e5e5; }
@@ -706,6 +715,7 @@ body {
   margin-right: 55px;
   font-size: 18px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .catalog-subfilter ul {
@@ -728,7 +738,6 @@ body {
   text-decoration: none;
   vertical-align: top;
   color: #b2b2b2;
-  border-bottom: 1px dotted #00ca74;
 }
 
 .catalog-subfilter a:hover {
@@ -752,7 +761,7 @@ body {
   border: none;
 }
 
-.catalog-subfilter-btn .active { color: #00ca74; }
+.catalog-subfilter-btn .active { color: #000; }
 
 .catalog-subfilter-btn a:hover {
   color: #b2b2b2;
@@ -877,6 +886,9 @@ body {
   color: black;
   background-color: #f1f1f1;
   border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .paginator .active {
@@ -895,7 +907,7 @@ body {
   box-shadow: none;
 }
 
-.paginator li:last-child a { padding: 1px 29px; }
+.paginator li:last-child a { padding: 1px 60px; }
 
 .paginator a:hover { background-color: #e5e5e5; }
 
@@ -908,6 +920,8 @@ body {
   position: fixed;
   top:20%;
   left: 50%;
+  z-index: 20000;
+  transform: translateX(-350px);
   display: none;
   width: 470px;
   padding: 53px 80px;
@@ -928,6 +942,7 @@ body {
   width: 220px;
   margin-right: 20px;
   padding-bottom: 20px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
@@ -941,12 +956,15 @@ body {
   width: 185px;
   height: 32px;
   padding: 0 15px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 12px;
   font-weight: 500;
   text-align: left;
+  text-transform: uppercase;
   color: #000;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  outline: none;
 }
 
 .form-col input[type="text"]:hover { border-color: #a2a9ac; }
@@ -958,6 +976,7 @@ body {
 .modal-form .form-row {
   width: 480px;
   padding-bottom: 48px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
@@ -973,9 +992,11 @@ body {
   font-size: 12px;
   font-weight: 500;
   text-align: left;
+  text-transform: uppercase;
   color: #000;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  outline: none;
 }
 
 .form-row input[type="text"]:hover { border-color: #a2a9ac; }
@@ -989,6 +1010,9 @@ body {
   font-size: 12px;
   font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
   color: #fff;
   background-color: #fb565a;
   border-radius: 3px;
@@ -1000,6 +1024,9 @@ body {
   font-size: 12px;
   font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
   color: #000;
   background-color: #f1f1f1;
   border-radius: 3px;
