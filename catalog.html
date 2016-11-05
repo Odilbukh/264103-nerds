@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Маленькая, но гордая дизайн-студия из Краснодара.</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -53,7 +52,7 @@
             <label class="max-price">До <input name="max-price" type="text" value="15000"></label>
           </div>
         </div>
-
+        
         <h2 class="catalog-filter-title-rad">Сетка</h2>
         <input type="radio" name="ra1" value="adaptive" id="ra1" checked>
         <label for="ra1">Адаптивная</label>
@@ -73,7 +72,7 @@
         <label for="ch7">Галерея</label>
         <input type="checkbox" name="ch8" id="ch8">
         <label for="ch8">Корзина</label>
-
+        
         <button type="submit" class="btn btn-gray">Показать</button>
       </form>
     </aside>
@@ -95,7 +94,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-sedona.jpg" alt="картинка товара" width="340" height="540">
+            <img src="img/img-sedona.jpg" alt="картинка товара" width="360" height="570">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Sedona</h2>
@@ -107,7 +106,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-pink.jpg" alt="картинка товара" width="340" height="540">
+            <img src="img/img-pink.jpg" alt="картинка товара" width="360" height="570">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Pink</h2>
@@ -119,7 +118,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-barbershop.jpg" alt="картинка товара" width="340" height="540">
+            <img src="img/img-barbershop.jpg" alt="картинка товара" width="360" height="570">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Borodinskiy</h2>
@@ -131,7 +130,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-mishka.jpg" alt="картинка товара" width="340" height="540">
+            <img src="img/img-mishka.jpg" alt="картинка товара" width="360" height="570">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Mishka</h2>
@@ -143,7 +142,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-aplus.jpg" alt="картинка товара" width="340" height="540">
+            <img src="img/img-aplus.jpg" alt="картинка товара" width="360" height="570">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Aplus</h2>
@@ -155,7 +154,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-kvast.jpg" alt="картинка товара" width="340" height="540">
+            <img src="img/img-kvast.jpg" alt="картинка товара" width="360" height="570">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Kvast</h2>
@@ -175,19 +174,19 @@
 
   <footer class="main-footer">
     <div class="map">
-      <div class="map-canvas" id="map"></div>
-      <div class="map-content">
-        <h2 class="map-content-title">Nerds design studio</h2>
-        <p class="map-content-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-telephone">тел. +7 (812) 275-75-75</p>
-        <a class="btn btn-red" href="modal-form.html">Напишите нам</a>
+      <div class="map-container" id="map"></div>
+      <div class="map-block">
+        <h2 class="map-block-title">Nerds design studio</h2>
+        <p class="map-block-address">191186, Санк-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+        <p class="map-block-telephone">тел. +7 (861) 275-75-75</p>
+        <a class="btn btn-red" href="#">Напишите нам</a>
       </div>
     </div>
     <div class="container clearfix">
       <div class="social-block">
-        <a href="#" class="social-link"><i class="icon-vk"></i></a>
-        <a href="#" class="social-link"><i class="icon-facebook"></i></a>
-        <a href="#" class="social-link"><i class="icon-instagramm"></i></a>
+        <a href="#" class="social-btn social-btn-vk"></a>
+        <a href="#" class="social-btn social-btn-fb"></a>
+        <a href="#" class="social-btn social-btn-ins"></a>
       </div>
       <div class="discount">
         <h2 class="discount-title">Давайте дружить, это выгодно!</h2>
@@ -196,8 +195,8 @@
     </div>
   </footer>
 
-  <div class="modal-form;">
-    <form action="/modal-form" method="post">
+  <div class="modal-form">
+    <form action="" method="post">
       <div class="clearfix">
         <div class="form-col">
           <label for="i1">Ваше имя:</label>
@@ -219,6 +218,6 @@
     </form>
   </div>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js"></script> 
 </body>
 </html>
