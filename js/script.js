@@ -18,7 +18,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 // END MAP
 
 // POPUP
-var link = document.querySelector(".map-content .btn-red");
+var link = document.querySelector(".map-block .btn-red");
 var popup = document.querySelector(".modal-form");
 var cancel = document.querySelector(".modal-form .btn-gray")
 
