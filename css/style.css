@@ -198,7 +198,6 @@ body {
   vertical-align: top;  
 }
 
-
 .main-navigation a {
   font-size: 15px;
   font-weight: 600;
@@ -216,16 +215,25 @@ body {
   opacity: 0.2
 }
 
-.main-navigation .icon-basket:hover {color: #f1f1f1;}
+.main-navigation .icon-basket:hover {
+  color: #f1f1f1;
+}
 
-.main-navigation .active { border-bottom: 2px solid #fb565a; }
+.main-navigation .active { 
+  border-bottom: 2px solid #fb565a; 
+}
 
-.main-navigation a:hover { color: #fb565a; }
+.main-navigation a:hover { 
+  color: #fb565a; 
+}
 
-.main-navigation a:active { color: #cbcbcb; }
+.main-navigation a:active { 
+  color: #cbcbcb; 
+}
 
-.main-navigation .icon-basket { padding-right: 20px; }
-
+.main-navigation .icon-basket { 
+  padding-right: 20px; 
+}
 
 .slider {
   position: relative;
@@ -236,48 +244,45 @@ body {
 
 .slider input[type=radio] {
     position: absolute;
-    opacity:0;
+    opacity: 0;
 }
 
 .slider-toggle {
   position: absolute;
   bottom: 95px;
   left: 50%;
-  width: 130px; 
+  width: 200px;
   height: 10px;
-  margin-left: -50px;
+  margin-left: -100px;
   text-align: center;
   z-index: 1000;
-  top: 310px;
-  left: ;
 }
 
 .slider-toggle label {
-  display: inline-block;
+  display:inline-block;
   width: 18px;
   height: 18px;
-  margin: 0 5px;
-  background: #fff;
-  border: 3px solid #fff;
-  vertical-align:top;
+  margin: 0 3px;
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
   border-radius: 50%;
   cursor: pointer;
 }
 
-#btn-1:checked ~ .slider-toggle label[for="btn-1"],
-#btn-2:checked ~ .slider-toggle label[for="btn-2"],
-#btn-3:checked ~ .slider-toggle label[for="btn-3"] { 
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+#btn-1:checked ~ .slider-toggle label[for="btn-1"]:after,
+#btn-2:checked ~ .slider-toggle label[for="btn-2"]:after,
+#btn-3:checked ~ .slider-toggle label[for="btn-3"]:after { 
+  content: "";
+  top: 2px;
+  left: 0px;
   display: block;
-  width: 18px;
-  height: 18px;
-  background-position: -5px -5px;
-  cursor: pointer;
-  position: absolute;
-  margin: 0px;
-  top: 0;
-  left: 0;
+  margin: 0 auto;
+  width: 8px;
+  height: 8px;
+  border: 3px solid gray;
+  border-radius: 50%;
+  position: relative;
 }
 
 .slide {
@@ -378,7 +383,11 @@ body {
 }
 
 .main-container { 
-  padding: 56px 0px 36px 138px; 
+  width: 1200px;
+  margin-left: 120px;
+  padding: 0 20px;
+  padding-top: 56px;
+  padding-bottom: 73px;
 }
 
 .services-ñontainer {
@@ -593,8 +602,8 @@ a.brand-item:after {
   height: 52px;
   background-position: -5px -235px;
   position: relative;
-  top: -70px;
-  left: 0;
+  top: -62px;
+  left: -2px;
 }
 
 .brand-item:last-child:after {
@@ -667,7 +676,9 @@ a.brand-item:after {
   border-radius: 3px;
 }
 
-.map-block .btn-red:hover { background-color:#d6494d; }
+.map-block .btn-red:hover { 
+  background-color:#d6494d; 
+}
 
 .map-block  .btn-red:active {
   background-color: #b63538;
@@ -716,6 +727,7 @@ a.brand-item:after {
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;  
 }
+
 .social-btn-vk::before {
   width: 26px;
   height: 15px;
@@ -1008,13 +1020,12 @@ a.brand-item:after {
   font-weight: 500;
   text-decoration: none;
   vertical-align: top;
-  color: #b2b2b2;
+  color: #ccc;
   text-transform: uppercase;
 }
 
 .catalog-subfilter a:hover {
-  border-bottom: 1px solid #00ca74;
-  color: #000;
+  color: #999;
  }
 
  .catalog-subfilter a:active {
@@ -1038,7 +1049,7 @@ a.brand-item:after {
 }
 
 .catalog-subfilter-btn a:hover {
-  color: #b2b2b2;
+  color: #999;
   border: none;
 }
 
@@ -1262,7 +1273,11 @@ a.brand-item:after {
 }
 
 .form-col input[type="text"]:focus { 
-  border-color: #56bffb; 
+  border-color: #000; 
+}
+
+.form-col input[type="text"]:error { 
+  border-color: red; 
 }
 
 .clearfix .form-col:last-child { 
@@ -1300,7 +1315,11 @@ a.brand-item:after {
 }
 
 .form-row input[type="text"]:focus { 
-  border-color: #56bffb;
+  border-color: #000;
+}
+
+.form-row input[type="text"]:error { 
+  border-color: red;
 }
 
 .modal-form .btn-red {
@@ -1318,6 +1337,15 @@ a.brand-item:after {
   border-radius: 3px;
 }
 
+.modal-form .btn-red:hover { 
+  background-color:#d6494d; 
+}
+
+.modal-form .btn-red:active {
+  background-color: #b63538;
+  box-shadow: inset 0px 3px 0px #9b2d30;
+}
+
 .modal-form .btn-gray {
   display: inline-block;
   padding: 12px 86px;
@@ -1330,4 +1358,13 @@ a.brand-item:after {
   color: #000;
   background-color: #f1f1f1;
   border-radius: 3px;
+}
+
+.modal-form .btn-gray:hover { 
+  background-color: #e5e5e5; 
+}
+
+.modal-form .btn-gray:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0px #b5b5b5;
 }
