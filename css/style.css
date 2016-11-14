@@ -38,111 +38,111 @@ body {
 }
 
 .sprite {
-    background-image: url(../img/sprite.png);
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-active {
-    width: 18px;
-    height: 18px;
-    background-position: -5px -5px;
+  width: 18px;
+  height: 18px;
+  background-position: -5px -5px;
 }
 
 .sprite-chek {
-    width: 23px;
-    height: 23px;
-    background-position: -5px -33px;
+  width: 23px;
+  height: 23px;
+  background-position: -5px -33px;
 }
 
 .sprite-chek_active {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -66px;
+  width: 27px;
+  height: 23px;
+  background-position: -5px -66px;
 }
 
 .sprite-dis_chek {
-    width: 23px;
-    height: 23px;
-    background-position: -5px -99px;
+  width: 23px;
+  height: 23px;
+  background-position: -5px -99px;
 }
 
 .sprite-dis_chek_active {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -132px;
+  width: 27px;
+  height: 23px;
+  background-position: -5px -132px;
 }
 
 .sprite-dis_radio {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -165px;
+  width: 25px;
+  height: 25px;
+  background-position: -5px -165px;
 }
 
 .sprite-dis_radio_active {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -200px;
+  width: 25px;
+  height: 25px;
+  background-position: -5px -200px;
 }
 
 .sprite-div {
-    width: 2px;
-    height: 52px;
-    background-position: -5px -235px;
+  width: 2px;
+  height: 52px;
+  background-position: -5px -235px;
 }
 
 .sprite-fb-icon {
-    width: 12px;
-    height: 22px;
-    background-position: -5px -297px;
+  width: 12px;
+  height: 22px;
+  background-position: -5px -297px;
 }
 
 .sprite-hover_chek {
-    width: 23px;
-    height: 23px;
-    background-position: -5px -329px;
+  width: 23px;
+  height: 23px;
+  background-position: -5px -329px;
 }
 
 .sprite-hover_chek_active {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -362px;
+  width: 27px;
+  height: 23px;
+  background-position: -5px -362px;
 }
 
 .sprite-hover_radio {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -395px;
+  width: 25px;
+  height: 25px;
+  background-position: -5px -395px;
 }
 
 .sprite-hover_radio_active {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -430px;
+  width: 25px;
+  height: 25px;
+  background-position: -5px -430px;
 }
 
 .sprite-insta-icon {
-    width: 21px;
-    height: 21px;
-    background-position: -5px -465px;
+  width: 21px;
+  height: 21px;
+  background-position: -5px -465px;
 }
 
 .sprite-radio {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -496px;
+  width: 25px;
+  height: 25px;
+  background-position: -5px -496px;
 }
 
 .sprite-radio_active {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -531px;
+  width: 25px;
+  height: 25px;
+  background-position: -5px -531px;
 }
 
 .sprite-vk-icon {
-    width: 26px;
-    height: 15px;
-    background-position: -5px -566px;
+  width: 26px;
+  height: 15px;
+  background-position: -5px -566px;
 }
 
 .clearfix::after,
@@ -156,11 +156,15 @@ body {
 .services,
 .about-left,
 .social-block,
-.catalog-filter { float: left; }
+.catalog-filter { 
+  float: left; 
+}
 
 .about-right,
 .discount,
-.catalog-container { float: right; }
+.catalog-container { 
+  float: right; 
+}
 
 .main-navigation { 
   float: left;  
@@ -243,8 +247,8 @@ body {
 }
 
 .slider input[type=radio] {
-    position: absolute;
-    opacity: 0;
+  position: absolute;
+  opacity: 0;
 }
 
 .slider-toggle {
@@ -586,12 +590,17 @@ body {
   padding-right: 15px;
 }
 
+.brand a:nth-child(3n+2) { 
+  margin: 0 0px; 
+}
 
-.brand a:nth-child(3n+2) { margin: 0 0px; }
+.brand a:hover { 
+  opacity: 1; 
+}
 
-.brand a:hover { opacity: 1; }
-
-.brand a:last-child { padding-right: 0px; }
+.brand a:last-child { 
+  padding-right: 0px; 
+}
 
 a.brand-item:after {
   content: "";
@@ -711,7 +720,9 @@ a.brand-item:after {
   left: 0px;
 }
 
-.social-block a:hover { background-color:#fb565a; }
+.social-block a:hover { 
+  background-color:#fb565a; 
+}
 
 .social-block a:active {
   background-color: #d6494d;
