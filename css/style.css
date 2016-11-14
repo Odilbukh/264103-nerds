@@ -231,11 +231,11 @@ body {
   color: #fb565a; 
 }
 
-.main-navigation a:active { 
+.main-navigation a:active {
   color: #cbcbcb; 
 }
 
-.main-navigation .icon-basket { 
+.main-navigation .icon-basket {
   padding-right: 20px; 
 }
 
@@ -253,7 +253,7 @@ body {
 
 .slider-toggle {
   position: absolute;
-  bottom: 95px;
+  bottom: 108px;
   left: 50%;
   width: 200px;
   height: 10px;
@@ -325,7 +325,7 @@ body {
   display: block;
   width: 240px;
   padding: 16px 0;
-  margin-top: 38px;
+  margin-top: 36px;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -391,7 +391,8 @@ body {
   margin-left: 120px;
   padding: 0 20px;
   padding-top: 56px;
-  padding-bottom: 73px;
+  padding-bottom: 36px;
+  
 }
 
 .services-ñontainer {
@@ -401,7 +402,7 @@ body {
 
 .services {
   width: 240px;
-  margin: 20px 160px 0 0;
+  margin: 23px 160px 0 0;
 }
 
 .services:last-child { 
@@ -518,7 +519,7 @@ body {
   width: 360px;
   height: 15px;
   margin: 0;
-  padding: 22px 0px 8px 0px;
+  padding: 22px 0px 6px 0px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
@@ -543,7 +544,7 @@ body {
 }
 
 .about-right { 
-  width: 405px; 
+  width: 398px; 
 }
 
 .about-right .litlle-logo { 
@@ -551,7 +552,7 @@ body {
 }
 
 .work-love { 
-  width: 390px; 
+  width: 394px; 
 }
 
 .numbers {
@@ -571,7 +572,7 @@ body {
   padding-left: 0px;
   text-align: left;
   border-bottom: 2px solid #eee;
-  
+  margin-bottom: 35px;
 }
 
 .brand a {
@@ -589,6 +590,7 @@ body {
   padding-left: 5px;
   padding-right: 15px;
 }
+
 
 .brand a:nth-child(3n+2) { 
   margin: 0 0px; 
@@ -611,7 +613,7 @@ a.brand-item:after {
   height: 52px;
   background-position: -5px -235px;
   position: relative;
-  top: -62px;
+  top: -64px;
   left: -2px;
 }
 
@@ -720,9 +722,7 @@ a.brand-item:after {
   left: 0px;
 }
 
-.social-block a:hover { 
-  background-color:#fb565a; 
-}
+.social-block a:hover { background-color:#fb565a; }
 
 .social-block a:active {
   background-color: #d6494d;
@@ -738,7 +738,6 @@ a.brand-item:after {
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;  
 }
-
 .social-btn-vk::before {
   width: 26px;
   height: 15px;
@@ -759,7 +758,7 @@ a.brand-item:after {
 
 .discount {
   width: 545px;
-  margin-top: -12px;
+  margin-top: -13px;
   margin-right: 254px;
 }
 
@@ -1139,17 +1138,17 @@ a.brand-item:after {
 }
 
 .catalog-item-hover .catalog-item-text {
-  width: 160px;
+  width: 200px;
   margin: 0 auto;
   margin-bottom: 31px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #c1c1c1;
 }
 
 .catalog-item-hover .btn-red {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 1px;
   padding: 14px 62px;
   font-size: 16px;
   font-weight: 500;
@@ -1287,10 +1286,6 @@ a.brand-item:after {
   border-color: #000; 
 }
 
-.form-col input[type="text"]:error { 
-  border-color: red; 
-}
-
 .clearfix .form-col:last-child { 
   margin-right: 0px; 
 }
@@ -1327,10 +1322,6 @@ a.brand-item:after {
 
 .form-row input[type="text"]:focus { 
   border-color: #000;
-}
-
-.form-row input[type="text"]:error { 
-  border-color: red;
 }
 
 .modal-form .btn-red {
