@@ -634,6 +634,7 @@ a.brand-item:after {
   position: relative;
   width: 100%;
   margin-top: 8px;
+  background: url(../img/smart-map.png) 80% 39% no-repeat #eee;
 }
 
 .map-block {
