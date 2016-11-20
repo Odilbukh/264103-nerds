@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>Маленькая, но гордая дизайн-студия из Краснодара.</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <div class="container clearfix">
       <div class="header-logo">
-        <a class="big-logo" href="index.html"><img src="img/logo.png" width="139" height="56" alt="Логотип"></a>
+        <a class="big-logo" href="index.html"><img src="img/logo.png" width="160" height="64" alt="Логотип"></a>
       </div>
       <nav class="main-navigation">
         <ul>
@@ -39,7 +39,7 @@
     <aside class="catalog-filter">
       <form action="catalog.html" method="post">
         <div class="filter-range">
-          <h2 class="range-title">Стоимость</h2>
+          <h2 class="range-title">Стоимость:</h2>
           <div class="range-control">
             <div class="scale">
               <div class="bar"></div>
@@ -52,8 +52,8 @@
             <label class="max-price">До <input name="max-price" type="text" value="15000"></label>
           </div>
         </div>
-        
-        <h2 class="catalog-filter-title-rad">Сетка</h2>
+
+        <h2 class="catalog-filter-title-rad">Сетка:</h2>
         <input type="radio" name="ra1" value="adaptive" id="ra1" checked>
         <label for="ra1">Адаптивная</label>
         <input type="radio" name="ra1" value="fixed" id="ra2">
@@ -61,7 +61,7 @@
         <input type="radio" name="ra1" value="rubber" id="ra3">
         <label for="ra3">Резиновая</label>
 
-        <h2 class="catalog-filter-title-che">Особенности</h2>
+        <h2 class="catalog-filter-title-che">Особенности:</h2>
         <input type="checkbox" name="ch4" id="ch4" checked>
         <label for="ch4">Слайдер</label>
         <input type="checkbox" name="ch5" id="ch5">
@@ -72,7 +72,7 @@
         <label for="ch7">Галерея</label>
         <input type="checkbox" name="ch8" id="ch8">
         <label for="ch8">Корзина</label>
-        
+
         <button type="submit" class="btn btn-gray">Показать</button>
       </form>
     </aside>
@@ -82,7 +82,7 @@
         <ul>
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
+          <li><a href="#">По названию</a></li>
         </ul>
         <div class="catalog-subfilter-btn">
           <a href="#"><i class="active icon-down-dir"></i></a>
@@ -94,7 +94,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-sedona.jpg" alt="картинка товара" width="360" height="570">
+            <img src="img/img-sedona.jpg" alt="картинка товара" width="358" height="576">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Sedona</h2>
@@ -106,7 +106,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-pink.jpg" alt="картинка товара" width="360" height="570">
+            <img src="img/img-pink.jpg" alt="картинка товара" width="358" height="576">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Pink</h2>
@@ -118,7 +118,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-barbershop.jpg" alt="картинка товара" width="360" height="570">
+            <img src="img/img-barbershop.jpg" alt="картинка товара" width="358" height="576">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Borodinskiy</h2>
@@ -130,7 +130,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-mishka.jpg" alt="картинка товара" width="360" height="570">
+            <img src="img/img-mishka.jpg" alt="картинка товара" width="358" height="576">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Mishka</h2>
@@ -142,7 +142,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-aplus.jpg" alt="картинка товара" width="360" height="570">
+            <img src="img/img-aplus.jpg" alt="картинка товара" width="358" height="576">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">A Plus</h2>
@@ -154,7 +154,7 @@
         <article class="catalog-item">
           <ul class="browser"><li></li><li></li><li></li></ul>
           <figure class="catalog-item-picture">
-            <img src="img/img-kvast.jpg" alt="картинка товара" width="360" height="570">
+            <img src="img/img-kvast.jpg" alt="картинка товара" width="358" height="576">
           </figure>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title">Кваст</h2>
@@ -178,7 +178,7 @@
       <div class="map-block">
         <h2 class="map-block-title">Nerds design studio</h2>
         <p class="map-block-address">191186, Санк-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-        <p class="map-block-telephone">тел. +7 (861) 275-75-75</p>
+        <p class="map-block-telephone">тел. +7 (812) 275-75-75</p>
         <a class="btn btn-red" href="#">Напишите нам</a>
       </div>
     </div>
@@ -199,17 +199,17 @@
     <form action="#" method="post">
       <div class="clearfix">
         <div class="form-col">
-          <label for="i1">Ваше имя:</label>
-          <input id="i1" type="text" placeholder="Представьтесь, пожалуйста">
+		  <label for="i1">Ваше имя:</label>
+          <input id="i1" type="text" placeholder="Представьтесь, пожалуйста">          
         </div>
         <div class="form-col">
-          <label for="i2">Ваш e-mail:</label>
-          <input id="i2" type="text" placeholder="Для отправки ответа">
+		  <label for="i2">Ваш e-mail:</label>
+          <input id="i2" type="text" placeholder="Для отправки ответа">          
         </div>
       </div>
       <div class="form-row">
-        <label for="i3">Текст письма:</label>
-        <input id="i3" type="text" placeholder="В свободной форме">
+	    <label for="i3">Текст письма:</label>
+        <input id="i3" type="text" placeholder="В свободной форме">        
       </div>
       <div class="form-btn">
         <button type="submit" class="btn btn-red">Отправить</button>
@@ -218,6 +218,6 @@
     </form>
   </div>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-  <script src="js/script.js"></script> 
+  <script src="js/script.min.js"></script>
 </body>
 </html>

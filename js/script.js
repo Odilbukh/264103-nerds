@@ -2,12 +2,12 @@
 function initialize() {
   var mapOptions = {
     zoom: 17,
-    center: new google.maps.LatLng(59.938707,30.323809)
+    center: new google.maps.LatLng(59.939122,30.321491)
   }
   var map = new google.maps.Map(document.getElementById('map'),
                                 mapOptions);
   var image = "img/marker.png";
-  var myLatLng = new google.maps.LatLng(59.938707,30.323809);
+  var myLatLng = new google.maps.LatLng(59.938738,30.323815);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
