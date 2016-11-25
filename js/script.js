@@ -20,14 +20,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
 // POPUP
 var link = document.querySelector(".map-block .btn-red");
 var popup = document.querySelector(".modal-form");
-var cancel = document.querySelector(".modal-form .btn-gray")
+var close = document.querySelector(".modal-form .form-close")
+
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-form-show");
 });
 
-cancel.addEventListener("click", function(event) {
+close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("modal-form-show");
 });
