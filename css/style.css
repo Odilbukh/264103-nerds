@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
  @font-face {
-  font-family: "PT Sans Narrow", "Roboto", sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "PT Sans Narrow", "Roboto", sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   display: inline-block;
@@ -29,7 +29,7 @@
 body {
   max-width: 100%;
   margin: 0;
-  padding:0;
+  padding-left: 0;
   font-size: 16px;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 300;
@@ -42,48 +42,6 @@ body {
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
   display: block;
-}
-
-.sprite-active {
-  width: 18px;
-  height: 18px;
-  background-position: -5px -5px;
-}
-
-.sprite-chek {
-  width: 23px;
-  height: 23px;
-  background-position: -5px -33px;
-}
-
-.sprite-chek_active {
-  width: 27px;
-  height: 23px;
-  background-position: -5px -66px;
-}
-
-.sprite-dis_chek {
-  width: 23px;
-  height: 23px;
-  background-position: -5px -99px;
-}
-
-.sprite-dis_chek_active {
-  width: 27px;
-  height: 23px;
-  background-position: -5px -132px;
-}
-
-.sprite-dis_radio {
-  width: 25px;
-  height: 25px;
-  background-position: -5px -165px;
-}
-
-.sprite-dis_radio_active {
-  width: 25px;
-  height: 25px;
-  background-position: -5px -200px;
 }
 
 .sprite-div {
@@ -128,18 +86,6 @@ body {
   background-position: -5px -465px;
 }
 
-.sprite-radio {
-  width: 25px;
-  height: 25px;
-  background-position: -5px -496px;
-}
-
-.sprite-radio_active {
-  width: 25px;
-  height: 25px;
-  background-position: -5px -531px;
-}
-
 .sprite-vk-icon {
   width: 26px;
   height: 15px;
@@ -182,6 +128,7 @@ body {
   width: 1440px;
   padding-top: 50px;
   background-color: #eeeeee;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -328,6 +275,7 @@ body {
   padding: 16px 0;
   margin-top: 36px;
   font-size: 16px;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   text-decoration:none;
@@ -393,10 +341,9 @@ body {
   padding: 0 20px;
   padding-top: 56px;
   padding-bottom: 36px;
-
 }
 
-.services-�ontainer {
+.services-container {
   padding-bottom: 80px;
   border-bottom: 2px solid #eee;
 }
@@ -571,6 +518,7 @@ body {
 }
 
 .brand {
+  position: relative;
   height: 180px;
   padding-left: 0px;
   text-align: left;
@@ -582,7 +530,16 @@ body {
   padding-right: 10px;
   display: inline-block;
   vertical-align: middle;
+  /*opacity: 0.2;*/
+  position: relative;
+}
+
+.brand img {
   opacity: 0.2;
+}
+
+.brand img:hover {
+  opacity: 1;
 }
 
 .brand-1 {
@@ -607,18 +564,15 @@ body {
   padding-right: 0px;
 }
 
-a.brand-item:after {
+.brand-item:after {
   content: "";
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
-  display: inline-block;
+  position: absolute;
   width: 2px;
   height: 52px;
-  background-position: -5px -235px;
-  position: relative;
-  top: -87px;
-  left: -2px;
-  vertical-align: middle;
+  background-color: #eee;
+  top: 73px;
+  left: 281px;
+  opacity: 1;
 }
 
 .brand-item:last-child:after {
@@ -683,7 +637,7 @@ a.brand-item:after {
   padding: 16px 48px;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1241,26 +1195,55 @@ a.brand-item:after {
 
 .modal-form {
   position: fixed;
-  top:20%;
+  top:3%;
   left: 50%;
   z-index: 20000;
-  transform: translateX(-350px);
+  transform: translateX(-432px);
   display: none;
-  width: 470px;
-  padding: 53px 80px;
+  padding: 40px 96px;
+  padding-bottom: 84px;
   background-color: #fff;
-  box-shadow: 0 10px 35px 10px #595a5a;
+  width: 765px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .modal-form-show {
   display: block;
 }
 
-.modal-form-close {
+.form-head h2 {
+  height: 33px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+  margin-top: 27px;
+  margin-bottom: 52px;
+}
+
+.form-head img {
   position: absolute;
-  top: 5px;
-  right: 5px;
- }
+  top: 76px;
+  right: 90px;
+  display: block;
+  opacity: 0.5;
+}
+
+.form-head img:hover {
+  opacity: 1;
+}
+
+.form-head img:active {
+  opacity: 1;
+}
+
+.form-head img:active {
+  opacity: 0.2;
+}
 
 .modal-form .form-col {
   float: left;
@@ -1274,12 +1257,13 @@ a.brand-item:after {
 
 .form-col label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  font-weight: bold;
 }
 
 .form-col input[type="text"] {
-  width: 185px;
-  height: 32px;
+  width: 327px;
+  height: 50px;
   padding: 0 15px;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 12px;
@@ -1290,6 +1274,8 @@ a.brand-item:after {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   outline: none;
+  border-right-width: 2px;  
+  margin-right: 40px;  
 }
 
 .form-col input[type="text"]:hover {
@@ -1302,14 +1288,16 @@ a.brand-item:after {
 
 .clearfix .form-col:last-child {
   margin-right: 0px;
+  margin-left: 161px;
 }
 
 .modal-form .form-row {
   width: 480px;
   padding-bottom: 48px;
+  padding-top: 10px;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .form-row label {
@@ -1318,7 +1306,7 @@ a.brand-item:after {
 }
 
 .form-row input[type="text"] {
-  width: 430px;
+  width: 732px;
   padding: 10px 10px 86px 15px;
   font-size: 12px;
   font-weight: 500;
@@ -1340,10 +1328,10 @@ a.brand-item:after {
 
 .modal-form .btn-red {
   display: inline-block;
-  padding: 12px 75px;
+  padding: 15px 80px;
   margin-right: 16px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   border: none;
@@ -1361,28 +1349,4 @@ a.brand-item:after {
 .modal-form .btn-red:active {
   background-color: #b63538;
   box-shadow: inset 0px 3px 0px #9b2d30;
-}
-
-.modal-form .btn-gray {
-  display: inline-block;
-  padding: 12px 86px;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
-  color: #000;
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  vertical-align: top;
-}
-
-.modal-form .btn-gray:hover {
-  background-color: #e5e5e5;
-}
-
-.modal-form .btn-gray:active {
-  background-color: #d5d5d5;
-  box-shadow: inset 0px 3px 0px #b5b5b5;
 }
