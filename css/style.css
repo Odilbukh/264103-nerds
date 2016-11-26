@@ -337,10 +337,11 @@ body {
 
 .main-container {
   width: 1200px;
-  margin-left: 120px;
   padding: 0 20px;
+  padding-left: 140px;
   padding-top: 56px;
   padding-bottom: 36px;
+  margin: 0 auto;
 }
 
 .services-container {
